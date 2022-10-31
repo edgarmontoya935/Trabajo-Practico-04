@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cinzel:wght@700&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+body{
+    background-image: url(../imagenes/logo.jpg);
+    background-size: 50px;
+    background-color: white;
+    width: 100%;
+}
+
+.header{
+    font-family: 'Bungee Spice', sans-serif;
+    background-color:#293242;
+    color:#FDA312;
+    text-align: center;
+    font-size: 3.2em;
+    padding: 20px;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+}
+
+.container__title{
+    font-family: 'Bungee Spice', sans-serif;
+    background-color: #000;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.gamescontainer{
+    display: flex;
+}
+
+.mortalkombat{
+    border: 2px solid black;
+    background-image: radial-gradient(rgb(191, 215, 224), rgb(225, 210, 210), rgb(145, 180, 205));
+    text-align: center;
+    width: 50%;
+    transition: all 2s;
+}
+
+.mariokart{
+    border: 2px solid black;
+    background-image: radial-gradient(rgb(191, 215, 224), rgb(225, 210, 210), rgb(145, 180, 205));
+    text-align: center;
+    width: 50%;
+    transition: all 2s;
+}
+
+.mariokart__title, .mortalkombat__title{
+    font-family: 'Bungee Spice', sans-serif;
+    padding: 10px;
+}
+
+.mariokart__banner, .mortalkombat__banner{
+    width: 70%;
+    padding: 10px;
+}
+
+.mariokart:hover{
+    width: 100%;
+}
+
+.mortalkombat:hover{
+    width: 100%;
+}
+
+.footer{
+    font-family: 'Bungee Spice', sans-serif;
+    background-color: #293242;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+.boton{
+    display: inline-block;
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #000;
+    transition: all 0.5s;
+}
+
+.boton:hover{
+    background-color: white;
+    border: 1px solid black;
+    font-size: 2em;
+}
+
+p{
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+/************************************/
+/*          LAND PAGES CSS          */
+/************************************/
+
+.landpage__content{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    padding: 20px;
+}
+
+.landpage__content img{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    border: 1px solid black;
+}
+
+.landpage__content img:hover{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: -90px;
+}
+
+.landpage__text h2{
+    display: inline-block;
+    font-family: 'Bungee Spice', sans-serif;
+    background-color: #000;
+    font-size: 1.6em;
+}
+
+.mariokart__modojuego, .mortalkombat__requirement{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.mariokart__consoles, .mortalkombat__consoles{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.list{
+    list-style: decimal;
+    font-weight: 900;
+}
+
+.volver{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+}
+
+/************************************/
+/*          MEDIA QUERIE            */
+/************************************/
+
+@media (max-width:909px){
+    .landpage__content img:hover{
+        margin: 0;
+    }
+}
+
+@media (max-width:500px){
+    .mortalkombat, .mariokart{
+        width: 100%;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    h3, h4{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:400px){
+    .header{
+        margin: 20px;
+    }
+    .container{
+        margin: 0 20px 20px;
+    }
+    .footer{
+        margin: 0 20px 20px;
+    }
+}
+
+/************************************/
+/*        END OF CSS MAGIC!         */
+/************************************/

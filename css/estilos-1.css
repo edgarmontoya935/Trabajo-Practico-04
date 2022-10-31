@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E11364;
+}
+
+hr{
+    padding: 0px 20px;
+    margin: 0 20px;
+    border: 1px dashed #9B0034;
+}
+
+/************************************/
+/*          HEADER CSS              */
+/************************************/
+
+.header{
+    background-color: #BC105C;
+    color: white;
+    margin: 20px 80px;
+    padding: 20px;
+    font-size: 2.2rem;
+    text-align: center;
+    border-radius: 0;
+    border-left: 5px;
+    border-left-color: white;
+    border-left-style: solid;
+    border-right: 5px;
+    border-right-color: white;
+    border-right-style: solid;
+}
+
+/************************************/
+/*          CONTENIDO CSS           */
+/************************************/
+
+.container{
+    background-color: #BC105C;
+    margin: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container__title{
+    padding: 20px;
+    font-size: 1.2em;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+p{
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 20px;
+    text-align: justify;
+}
+
+.volver{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+}
+
+h3, h4{
+    color: #9B0034;
+    font-size: 1.3em;
+}
+
+/************************************/
+/*  MARIO KART & MORTAL KOMBAT CSS  */
+/************************************/
+
+.mariokart, .mortalkombat{
+    background-color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+.mariokart__title, .mortalkombat__title{
+    color: #9B0034;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding: 20px 20px 0px 20px;
+}
+
+.mariokart__banner, .mortalkombat__banner{
+    width: 100%;
+    padding: 20px;
+}
+
+/************************************/
+/*          LAND PAGES CSS          */
+/************************************/
+
+.landpage__content{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    padding: 20px;
+}
+
+.landpage__content img{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    border: 1px solid black;
+}
+
+.landpage__content img:hover{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: -90px;
+}
+
+.landpage__text h2{
+    color: #9B0034;
+    font-size: 1.6em;
+}
+
+.mariokart__modojuego, .mortalkombat__consoles{
+    text-align: justify;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid black;
+    background-image: linear-gradient( 90deg, #e49cb6, #df5889);
+}
+
+.mariokart__consoles, .mortalkombat__requirement{
+    text-align: justify;
+    margin: 20px;
+    border: 1px solid black;
+    background-image: linear-gradient( 90deg, #e49cb6, #df5889);
+}
+
+.list{
+    list-style: decimal;
+    font-weight: 900;
+}
+
+.list__items{
+    margin: 15px;
+}
+
+
+/************************************/
+/*          FOOTER CSS              */
+/************************************/
+
+.footer{
+    background-color: #E96093;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 20px 80px;
+}
+
+/************************************/
+/*          BOTON CSS               */
+/************************************/
+
+.boton{
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #2C8F20;
+    color: white;
+}
+
+.boton:hover{
+    background-color: #EE2D61;
+}
+
+/************************************/
+/*          MEDIA QUERIE            */
+/************************************/
+
+@media (max-width:909px){
+    .landpage__content img:hover{
+        margin: 0;
+    }
+}
+
+@media (max-width:500px){
+    .mortalkombat, .mariokart{
+        width: 100%;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    h3, h4{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:400px){
+    .header{
+        margin: 20px;
+    }
+    .container{
+        margin: 0 20px 20px;
+    }
+    .footer{
+        margin: 0 20px 20px;
+    }
+}
+
+/************************************/
+/*        END OF CSS MAGIC!         */
+/************************************/
